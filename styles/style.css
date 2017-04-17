@@ -168,7 +168,7 @@ margin:auto}
 	display: block;
 }
 #cols {
-	background: url(../images/bg-top-cont.png) repeat-x;
+	background: url(../images/bg-top-cont.png) repeat;
 	padding: 20px 0 40px 0;
 }
 #left_col {
@@ -207,7 +207,7 @@ width:311px;
 
 }
 
-#sidebar .top {
+#sidebar. top {
 position: relative;
 display:block;
 height: 19px;
@@ -218,14 +218,14 @@ background:url(images/bg-sidebar.gif) no-repeat scroll 0px 0px;
  /*	---------------------------------------------------------------------------------------
   Navigation and lists
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
-  ul#mainnav {width:1000px;
-  background-color: #87CEEB;
-  height:65px;
-  display:block;
-  float:left;
-  margin:-6spx 5px 0 0;
-    padding:0;
-    list-style:none;
+ul#mainnav {width:1000px;
+	background-color: #87CEEB;
+	height:65px;
+	display:block;
+	float:left;
+	margin:-6spx 5px 0 0;
+	padding:0;
+	list-style:none;
 }
 ul#mainnav li {float:left;
     margin:0 0px 0 0;
@@ -253,21 +253,20 @@ ul#mainnav li a.button:hover {
 	color: blue;
 }
 ul#mainnav li a {display:inline-block;
-height:60px;
+height:29px;
 color:#000000;
 border-radius: 4px;
 float: left;
 /* text-indent:-999999px; */
 background-position:0px -47px;
-background-repeat:no-repeat;
-}
+background-repeat:no-repeat}
 
 ul#mainnav li a:hover, ul#mainnav li#current a {
 	background-color: #87CEEF;
 	border: none;
 	color:white;
 	text-align: center;
-	height:30px;
+	height:29px;
 	text-decoration: none;
 	vertical-align: middle;
 	display: inline-block;
@@ -314,7 +313,7 @@ li a.home{
 /* background-image: url(../images/about-nav.jpg); */
 	background-color: #87CEEB; 
 	border: none;
-	padding: 22px 32px 15px 32px;
+	padding: 22px 32px 14px 32px;
 	color: white;
 	text-align: center;
 	text-decoration: none;
@@ -325,18 +324,20 @@ li a.about{
 /* background-image: url(../images/about-nav.jpg); */
 	background-color: #87CEEB; 
 	border: none;
-	padding: 22px 32px 15px  32px;
+	padding: 22px 32px 14px  32px;
 	color: white;
 	text-align: center;
 	text-decoration: none;
 	display: block;
 	font-size: 18px;
-	width:65px}
+	height:45;
+	width:65px;
+	}
 li a.patient-education{
 /* background-image: url(../images/about-nav.jpg); */
 	background-color: #87CEEB; 
 	border: none;
-	padding: 14px 32px 15px  32px;
+	padding: 14px 32px 14px  32px;
 	margin: 0px 0px 0px 0px;
 	color: white;
 	text-align: center;
@@ -348,7 +349,7 @@ li a.patient-information{
 /* background-image: url(../images/about-nav.jpg); */
 	background-color: #87CEEB; 
 	border: none;
-	padding: 14px 32px 15px  32px;
+	padding: 14px 32px 14px  32px;
 	color: white;
 	text-align: center;
 	text-decoration: none;
@@ -359,7 +360,7 @@ li a.contact{
 /* background-image: url(../images/about-nav.jpg); */
 	background-color: #87CEEB; 
 	border: none;
-	padding: 22px 32px 15px 32px;
+	padding: 22px 32px 14px 32px;
 	color: white;
 	text-align: center;
 	text-decoration: none;
@@ -367,6 +368,45 @@ li a.contact{
 	font-size: 18x;
 	width:73px
 	}
+ul#footer {
+	width:750px;
+	background-color:white;
+	height:20px;
+	display:block;
+	float:middle;
+	margin:0px 5px 0 0;
+	padding:0 0 0px 250px ;
+	list-style:none;
+	
+
+}
+ul#footer li {
+	float:left;
+    margin:0 0 0 0;
+    padding:0;
+	background:transparent;
+	height:20px;
+	font-size:10px;
+	font-family:Arial Narrow;
+	list-style:none;
+	border-right-style:solid;
+	border-width:1px;
+	padding:0;
+
+}	
+ul#footer li.last {
+	float:left;
+    margin:0 0 0 0;
+    padding:0;
+	background:transparent;
+	height:20px;
+	font-size:10px;
+	font-family:Arial Narrow;
+	list-style:none;
+	border-right-style:none;
+	border-width:1px;
+	padding:0;	
+}
 #left_col ul.full {width:100%}
 #left_col ul {
 	margin:10px;
