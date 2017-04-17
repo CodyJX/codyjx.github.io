@@ -391,7 +391,7 @@ ul#footer li {
 	list-style:none;
 	border-right-style:solid;
 	border-width:1px;
-	padding:0;
+	padding:0px 5px 0px 5px;
 
 }	
 ul#footer li.last {
@@ -405,7 +405,7 @@ ul#footer li.last {
 	list-style:none;
 	border-right-style:none;
 	border-width:1px;
-	padding:0 5px 0 5px;	
+	padding:0;	
 }
 #left_col ul.full {width:100%}
 #left_col ul {
