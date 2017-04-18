@@ -58,22 +58,15 @@ a {
   font-weight:normal
 }
 		  
-a:hover { color:#fff;
+a:hover { color:gray;
 
 }
 a:visited {
-  color:#fff
+  color:gray
 }	
 img {
 		  border:0px}
 .cleary {
-  clear: both;
-  height: 0;
-  display:block;
-  background:transparent;
-  float:none
-}
-.extend {
   clear: both;
   height: 0;
   display:block;
@@ -209,6 +202,8 @@ width:450px;
 	padding: 40px 0 0 0;
 	position:relative;
 	bottom:0;
+	background-color:white;
+	
 }
 #sidebar{
 padding: 0;
