@@ -14,13 +14,10 @@ html,body {
 	padding:0px;
 	background: #B6C0D2 url(../images/bg-body.png) repeat-x;
 	font-family:Arial, Helvetica, sans-serif;
-	height:100%;
-	min-height:100%;
 		  }
 body {
 	font-size:75%;
 	color:#000000;
-	min-height:100%;
 		  }
 table, td, th {font-size:13px}	
 p, h1, h2, h3, h4, form, ul, li, dl, dt, dd {
@@ -70,6 +67,14 @@ img {
 .cleary {
   clear: both;
   height: 0;
+  display:block;
+  background:transparent;
+  float:none
+}
+.extend {
+  clear: both;
+  height:150px;
+  min-height: 100%;
   display:block;
   background:transparent;
   float:none
@@ -149,17 +154,18 @@ width:450px;
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
   
 
-  #header {
-	height:99px;
+#header {
+	height:156px;
 	background:url(../images/bg-head.jpg) repeat-x; 
 	width: 1000px;
 	margin: auto;
 }
 #content {background: url(../images/bg-content.png) 0 0 repeat-y;
-width:1000px;
-height:250px;
-padding:0 0px;
-margin:auto}
+	width:1000px;
+	height:100%;
+	padding:0 0px;
+	margin:auto
+}
 
 #content span {
 	width:1000px; margin:auto; display:block}
@@ -173,8 +179,7 @@ margin:auto}
 #cols {
 	background: url(../images/bg-top-cont.png);
 	padding: 20px 0 40px 0;
-	min-height:100%;
-}
+	}
 #left_col {
 	width:642px;
 	float:left;
