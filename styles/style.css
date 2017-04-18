@@ -12,14 +12,14 @@ Dr. Penny Chow
 html,body {
 	margin:0px;
 	padding:0px;
-	background: #0d5b82 url(../images/bg-body.png) repeat-x;
-	font-family:Arial, Helvetica, sans-serif
-		  
+	background: #B6C0D2 url(../images/bg-body.png) repeat-x;
+	font-family:Arial, Helvetica, sans-serif;
 		  }
 	  
 body {
 	font-size:75%;
 	color:#000000;
+	min-height:100%;
 		  }
 table, td, th {font-size:13px}	
 p, h1, h2, h3, h4, form, ul, li, dl, dt, dd {
@@ -141,6 +141,8 @@ width:450px;
   text-indent:-999999px}
   acronym {border:none}
   strong.underline {border-bottom:1px dashed #fff}
+  
+  
 /*	---------------------------------------------------------------------------------------
   Layout boxes
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
@@ -160,8 +162,11 @@ width:1000px;
 height:250px;
 padding:0 0px;
 margin:auto}
-#content span {width:1000px; margin:auto; display:block}
-#left_col span {display:inline}
+
+#content span {
+	width:1000px; margin:auto; display:block}
+#left_col span {
+	display:inline}
 #content span.cleary {
 	width:0%;
 	float:none;
@@ -170,6 +175,7 @@ margin:auto}
 #cols {
 	background: url(../images/bg-top-cont.png) repeat;
 	padding: 20px 0 40px 0;
+	min-height:100%;
 }
 #left_col {
 	width:642px;
@@ -197,6 +203,8 @@ margin:auto}
 	text-align: center;
 	font-size: 11px;
 	padding: 40px 0 0 0;
+	position:relative;
+	bottom:0;
 }
 #sidebar{
 padding: 0;
@@ -219,7 +227,7 @@ background:url(images/bg-sidebar.gif) no-repeat scroll 0px 0px;
   Navigation and lists
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
 ul#mainnav {width:1000px;
-	background-color: #87CEEB;
+	background-color: #BB9BFF;
 	height:65px;
 	display:block;
 	float:left;
@@ -237,21 +245,8 @@ ul#mainnav li {float:left;
 	list-style:none;
 	
 }
-.button {
-	background-color: #87CEEB;
-	border: none;
-	color:#87CEEB;
-	padding: 0px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-}
-/* inserted button */
-ul#mainnav li a.button:hover {
-	background-color: blue;
-	color: blue;
-}
+
+
 ul#mainnav li a {display:inline-block;
 height:29px;
 color:#000000;
@@ -262,7 +257,7 @@ background-position:0px -47px;
 background-repeat:no-repeat}
 
 ul#mainnav li a:hover, ul#mainnav li#current a {
-	background-color: #87CEEF;
+	background-color: #BB9BFF;
 	border: none;
 	color:white;
 	text-align: center;
@@ -311,7 +306,7 @@ ul#mainnav li a:hover, ul#mainnav li#current a {
 
 li a.home{
 /* background-image: url(../images/about-nav.jpg); */
-	background-color: #87CEEB; 
+	background-color: #BB9BFF; 
 	border: none;
 	padding: 22px 32px 14px 32px;
 	color: white;
@@ -322,7 +317,7 @@ li a.home{
 	width:65px}
 li a.about{
 /* background-image: url(../images/about-nav.jpg); */
-	background-color: #87CEEB; 
+	background-color: #BB9BFF; 
 	border: none;
 	padding: 22px 32px 14px  32px;
 	color: white;
@@ -335,9 +330,9 @@ li a.about{
 	}
 li a.patient-education{
 /* background-image: url(../images/about-nav.jpg); */
-	background-color: #87CEEB; 
+	background-color: #BB9BFF; 
 	border: none;
-	padding: 14px 32px 14px  32px;
+	padding: 14px 32px 22px  32px;
 	margin: 0px 0px 0px 0px;
 	color: white;
 	text-align: center;
@@ -347,9 +342,9 @@ li a.patient-education{
 	width:65px}
 li a.patient-information{
 /* background-image: url(../images/about-nav.jpg); */
-	background-color: #87CEEB; 
+	background-color: #BB9BFF; 
 	border: none;
-	padding: 14px 32px 14px  32px;
+	padding: 14px 32px 22px  32px;
 	color: white;
 	text-align: center;
 	text-decoration: none;
@@ -358,7 +353,7 @@ li a.patient-information{
 	width:65px}
 li a.contact{
 /* background-image: url(../images/about-nav.jpg); */
-	background-color: #87CEEB; 
+	background-color: #BB9BFF; 
 	border: none;
 	padding: 22px 32px 14px 32px;
 	color: white;
