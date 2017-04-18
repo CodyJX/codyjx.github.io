@@ -14,8 +14,8 @@ html,body {
 	padding:0px;
 	background: #B6C0D2 url(../images/bg-body.png) repeat-x;
 	font-family:Arial, Helvetica, sans-serif;
+	height:100%
 		  }
-	  
 body {
 	font-size:75%;
 	color:#000000;
@@ -173,7 +173,7 @@ margin:auto}
 	display: block;
 }
 #cols {
-	background: url(../images/bg-top-cont.png) repeat;
+	background: url(../images/bg-top-cont.png);
 	padding: 20px 0 40px 0;
 	min-height:100%;
 }
