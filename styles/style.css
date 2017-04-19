@@ -2,8 +2,8 @@
 Dr. Penny Chow
 ===========
 :Author:    Cody Xu
-:Date:      1/16 /2017	
-:Revision:  Version 1
+:Date:      4/18 /2017	
+:Revision:  Version 5
   ---------------------------------------------------------------------------------------	*/
 /*	---------------------------------------------------------------------------------------
   Default styles
@@ -21,7 +21,8 @@ body {
 	font-size:75%;
 	color:#000000;
 		  }
-table, td, th {font-size:13px}	
+table, td, th {
+	font-size:13px}	
 p, h1, h2, h3, h4, form, ul, li, dl, dt, dd {
   padding:0px;
   margin:0px;
@@ -65,20 +66,13 @@ a:visited {
   color:gray
 }	
 img {
-		  border:0px}
+	border:0px}
 .cleary {
   clear: both;
   height: 0;
   display:block;
   background:transparent;
   float:none
-}
-.left{float:left; display:block}
-.right {float:right; display:inline;
-margin: 2px;
-border: 0px;
-padding:0px;
-width:450px;
 }
 /*	---------------------------------------------------------------------------------------
   Typography
@@ -92,28 +86,32 @@ width:450px;
   h1 {font-size:28px;
   font-weight:normal}
   
-  h2 {font-size:24px;
-  font-weight:normal}
+  h2 {
+		font-size:24px;
+		font-weight:normal
+	}
   .news h2{padding-bottom:20px}
-  h3 {font-size:20px;
-  font-weight:normal}
-  h4 {font-size:16px;
-  font-weight:normal;
+  h3 {
+		font-size:20px;
+		font-weight:normal}
+  h4 {
+		font-size:16px;
+		font-weight:normal;
   }
-  h5 {font-size:14px;
-  font-weight:normal; margin:0 10px; padding:0}
-  #left_col h4{border-top:1px dashed #3dac4c; padding:10px 0 0 0;
-  width:40%}
-  .news#left_col h4{
-	border-bottom:1px dashed #3dac4c;
-	border-top:none;
-	padding:0px 0 5px 0;
-	width:65%
-}
+  h5 {
+		font-size:14px;
+		font-weight:normal; 
+		margin:0 10px; 
+		padding:0
+	}
+  
+  #left_col h4{
+	  border-top:1px dashed #3dac4c; 
+	  padding:10px 0 0 0;
+	  width:40%
+	}
 
- .news#left_col h4.himg{margin-bottom:30px; display:block; float:left; width:50%}
 
-.news#left_col h4.blue {border-bottom:1px dashed #3e82a4}
  #sidebar h3, #sidebar h4 {
 	font-size:24px;
 	font-weight:normal;
@@ -147,6 +145,9 @@ width:450px;
   Layout boxes
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
   
+/*	
+Header
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
 
 #header {
 	height:156px;
@@ -154,6 +155,9 @@ width:450px;
 	width: 1000px;
 	margin: auto;
 }
+/*	
+ Content
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
 #content {background: url(../images/bg-content.png) 0 0 repeat-y;
 	width:1000px;
 	height:100%;
@@ -163,69 +167,21 @@ width:450px;
 
 #content span {
 	width:1000px; margin:auto; display:block}
-#left_col span {
-	display:inline}
+
 #content span.cleary {
 	width:0%;
 	float:none;
 	display: block;
 }
-#cols {
-	background: url(../images/bg-top-cont.png);
-	padding: 20px 0 40px 0;
-	min-height:80%;
-	}
-#left_col {
-	width:642px;
-	float:left;
-	padding: 0 10px;
-}
-#left_col img.left, #left_col img.right   {
-	margin:0 10px 10px 10px;
-	border:5px solid #083a52
-}
-.headimg{border:5px solid #083a52; margin:0 10px}
-.news#left_col img.right{margin:0 10px 0px 10px;}
-.news#left_col img.headimg{float:left}
 
-#right_col {
-	width:322px;
-	float:left;
-	margin:25px 0 0 15px
-}
-#footer {
-	width:1008px;
-	height:39px;
-	margin:auto;
-	text-align: center;
-	font-size: 11px;
-	padding: 40px 0 0 0;
-	position:relative;
-	bottom:0;
-	background-color:white;
-	
-}
-#sidebar{
-padding: 0;
-background:url(images/bg-sidebar.gif)  no-repeat scroll 0px bottom;
-margin:0;
-padding-bottom: 34px;
-width:311px;
-
-}
-
-#sidebar. top {
-position: relative;
-display:block;
-height: 19px;
-top: -19px;
-width:311px;
-background:url(images/bg-sidebar.gif) no-repeat scroll 0px 0px;
-}
  /*	---------------------------------------------------------------------------------------
   Navigation and lists
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
-ul#mainnav {width:1000px;
+/*	
+  Main Navigation Bar
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+  
+  ul#mainnav {width:1000px;
 	background-color: #BB9BFF;
 	height:65px;
 	display:block;
@@ -245,13 +201,11 @@ ul#mainnav li {float:left;
 	
 }
 
-
 ul#mainnav li a {display:inline-block;
 height:29px;
 color:#000000;
 border-radius: 4px;
 float: left;
-/* text-indent:-999999px; */
 background-position:0px -47px;
 background-repeat:no-repeat}
 
@@ -304,7 +258,6 @@ ul#mainnav li a:hover, ul#mainnav li#current a {
 }
 
 li a.home{
-/* background-image: url(../images/about-nav.jpg); */
 	background-color: #BB9BFF; 
 	border: none;
 	padding: 22px 32px 14px 32px;
@@ -315,7 +268,6 @@ li a.home{
 	font-size: 18px;
 	width:65px}
 li a.about{
-/* background-image: url(../images/about-nav.jpg); */
 	background-color: #BB9BFF; 
 	border: none;
 	padding: 22px 32px 14px  32px;
@@ -328,7 +280,6 @@ li a.about{
 	width:65px;
 	}
 li a.patient-education{
-/* background-image: url(../images/about-nav.jpg); */
 	background-color: #BB9BFF; 
 	border: none;
 	padding: 14px 32px 22px  32px;
@@ -340,7 +291,6 @@ li a.patient-education{
 	font-size: 18px;
 	width:65px}
 li a.patient-information{
-/* background-image: url(../images/about-nav.jpg); */
 	background-color: #BB9BFF; 
 	border: none;
 	padding: 14px 32px 22px  32px;
@@ -351,7 +301,6 @@ li a.patient-information{
 	font-size: 18px;
 	width:65px}
 li a.contact{
-/* background-image: url(../images/about-nav.jpg); */
 	background-color: #BB9BFF; 
 	border: none;
 	padding: 22px 32px 14px 32px;
@@ -362,9 +311,25 @@ li a.contact{
 	font-size: 18x;
 	width:73px
 	}
+/*	
+  Footer
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+#footer {
+	width:1008px;
+	height:39px;
+	margin:auto;
+	text-align: center;
+	font-size: 11px;
+	padding: 40px 0 0 0;
+	position:relative;
+	bottom:0;
+	background-color:#BB9BFF;
+	
+}
+
 ul#footer {
 	width:750px;
-	background-color:white;
+	background-color:#BB9BFF;
 	height:20px;
 	display:block;
 	float:middle;
@@ -401,15 +366,51 @@ ul#footer li.last {
 	border-width:1px;
 	padding:0 5px 0px 5px;	
 }
-#left_col ul.full {width:100%}
-#left_col ul {
+/*	
+  Body and Content - Columns: Left side
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+#cols {
+	background: url(../images/bg-top-cont.png);
+	padding: 20px 0 40px 0;
+	min-height:100%;
+	}
+#left_col {
+	width:642px;
+	float:left;
+	padding: 0 10px;
+}
+  #left_col ul {
 	margin:10px;
 	width:100%
 }
-#left_col ul.widelist {width:80%}
 #left_col ul li {font-size:12px; line-height:26px; background:url(images/bg-li.gif) 0 8px no-repeat; padding:0 0 0 20px}
 #left_col ul li span {font-size:16px; }
-#left_col ul li.clear {background:none; padding:0}
+#left_col span {
+	display:inline}
+.left{float:left; display:block}
+
+
+/*	
+  Body and Content - Columns: Right side
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+#right_col {
+	width:322px;
+	float:left;
+	margin:25px 0 0 15px
+}
+.right {float:right; display:inline;
+margin: 2px;
+border: 0px;
+padding:0px;
+width:450px;
+}
+#sidebar{
+padding: 0;
+background:url(images/bg-sidebar.gif)  no-repeat scroll 0px bottom;
+margin:0;
+padding-bottom: 34px;
+width:311px;
+}
 #sidebar ul {width:280px;
 padding:0 20px 60px 20px;
 margin:20px 0 20px -10px;
@@ -420,16 +421,6 @@ border-bottom:1px dashed #3e82a4;
 padding: 0 40px;
 font-size:14px
 }
-#left_col ul.left_services, #left_col ul.right_services {float:left; width:300px; display:block}
-#left_col ul.right_services {margin:60px 0 0 0}
-#left_col ul.left_services li.clear span {display:block;
-width:600px;
-clear:both;
-margin:0 0 10px 0;
-padding:0 0 10px 0;
-border-bottom:1px dashed #3e82a4}
-#left_col ul.left_services li ul, #left_col ul.right_services li ul {width:270px}
-#sidebar form {margin:-40px  0 60px 0}
+
  /* IE pngfix*/
 h1#logo a, span#promo{ behavior:url(iepngfix.htc); }
-div.hr{border-top:1px solid #3e82a4; border-bottom:1px solid #0C5C83; width:100%; margin:20px 0}
